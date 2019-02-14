@@ -1,0 +1,137 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.7in,top=0.3in,right=0.7in,bottom=0.3in]{geometry} % Document margins
+\usepackage{enumitem}
+\usepackage{geometry}
+ \usepackage{indentfirst} 
+\geometry{a4paper,left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm}
+\name{CHUNLEI ZHANG} 
+\address{(+1)864-986-5975 \quad \\ \quad chunlez@g.clemson.edu }
+\address{128 University Village Dr Apt C, Central, SC, 29630} % Your phone number and email
+
+\begin{document}
+%--------------------------------------------------------
+%	EDUCATION SECTION
+%--------------------------------------------------------
+\begin{rSection}{Education}
+{\bf Clemson University, South Carolina, USA} \hfill { Aug 2015 - Aug 2019} \\ 
+{\textbf{Ph.D.} Candidate in Electrical Engineering and Minor in Mathematics} \hfill { GPA: \bf 4.0/4.0}
+
+
+Relevant Courses: Data Analysis, Regression and Least Squares Analysis, Statistic Method, 
+Linear Programming, Nonlinear Programming, Discrete Optimization, Stochastic Process, Telecommunication Network Modeling and Analysis
+
+
+{\bf Beihang University, Beijing, China} \hfill { Sep 2011 - Jul 2015} \\ 
+{ Bachelor of Engineering  in Electronic and Information Engineering} \hfill { GPA: \bf 3.9/4.0; Top: 5\%}
+
+\end{rSection}
+
+%--------------------------------------------------------
+%	Engineering Project
+%--------------------------------------------------------
+
+\begin{rSection}{Data Science Projects}	
+	\begin{rSubsection}{Regression Analysis of Blood Enzyme Levels and a Health Indicator}
+		{Sept 2018 - Nov 2018}{Course Project Using R}{Clemson University}		
+		\setlength{\parindent}{2em} \item Applied Variance Inflation Factor (VIF) to check the potential multicollinearity within 100 kinds of blood enzyme		
+		\item Fitted models based on correlation, Stepwise Regression, Ridge Regression and LASSO with proper penalty parameters
+		\item Conducted hypothesis test to determine the model suitability based on p-value and obtained the PRESS value of each model
+		\item Selected the most appropriate model based on Akaike Information Criterion (AIC) and cross validation results and wrote a report		
+	\end{rSubsection}	
+	
+		\begin{rSubsection}{Regression Analysis of Local Meteorology and Air Pollution}
+			{Aug 2018 - Oct 2018}{Course Project Using R}{Clemson University}		
+			\setlength{\parindent}{2em} \item Fitted linear models using forward stepwise, backward stepwise, bidirectional stepwise, and Lasso regression
+			\item Visualized the standardized residual plot, QQ-plot, and ACF plot of each model to check the linear regression assumptions
+			\item Conducted Box-Cox Transformation to transform non-normal dependent variable into a normal shape
+			\item Determined the most appropriate predictive model by comparing the AIC and PRESS value.				
+		\end{rSubsection}	
+\end{rSection}
+
+%-------------------------------------------------------------------------------------
+%	Research Experience
+%-------------------------------------------------------------------------------------
+
+\begin{rSection}{Research Experience}	
+\begin{rSubsection}{Research on Decentralized Optimization Algorithms }
+{Jan 2017 - Present }{Research Assistant; Advisor: Dr. Yongqiang Wang}{Clemson University}
+
+ \setlength{\parindent}{2em}
+ \item Designed two novel algorithms which enabled data privacy-preservation in decentralized optimization based on Alternating Direction Method of Multipliers (ADMM) and Subgradient Method
+\item Analyzed the convergence rate of the ADMM-based algorithm, which is $O(1/k)$
+\item Implemented the ADMM-based algorithm on twelve Raspberry Pi boards using C++
+\item Evaluated the proposed algorithms on average consensus problem, linear regression problem, etc using C++
+\end{rSubsection}	
+		
+
+\begin{rSubsection}{Research on Application of Decentralized Optimization}{ Sep 2015 - Dec 2016  }{Research Assistant; Advisor: Dr. Yongqiang Wang}{Clemson University}
+       \item Proposed two distributed localization algorithms based on ADMM and proved the convergence rates of the proposed algorithms are $O(1/k)$
+		\item Compared the proposed algorithms with some existing localization algorithms via Matlab simulations, which suggested a 15\% performance improvement in localization accuracy 
+\end{rSubsection}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% PUBLICATION SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Publications}	
+	[7] \textbf{C. L. Zhang}, Y. Q. Wang, Privacy-preserving Decentralized Optimization based on ADMM. \emph{IEEE Transactions on Information Forensics and Security 14.3 (2019): 565-580.}
+	
+	[6]	\textbf{C. L. Zhang}, Y. Q. Wang, Distributed event localization via alternating direction method of multipliers. \emph{IEEE Transactions on Mobile Computing 17.2 (2018): 348-361.}
+	
+	[5] \textbf{C. L. Zhang}, Y. Q. Wang, Enabling Privacy-preservation in Decentralized Optimization.  Accepted to \emph{IEEE Transactions on Control of Network Systems}
+		
+	[4] \textbf{C. L. Zhang}, Y. Q. Wang, Sensor Network Event Localization via Non-convex Non-smooth ADMM and Augmented Lagrangian Methods. Accepted to  \emph{IEEE Transactions on Control of Network Systems.}
+	
+	[3] H. Gao, \textbf{C. L. Zhang}, M. Ahmad, Y. Q. Wang. Privacy-Preserving Average Consensus on Directed Graphs Using Push-Sum.  \emph{IEEE Conference on Communications and Network Security, 2018.}
+	
+	[2] T. Shang, \textbf{C. L. Zhang}, K. Li, J. W. Liu, Nonlinear quantum network coding with classical
+	communication resource.  \emph{IEEE Globecom Workshops, 2015.}
+	
+	[1] \textbf{C. L. Zhang}, H. Gao,  Y. Q. Wang. Enabling Privacy-preservation in ADMM based Decentralized Optimization using Function Decomposition. Submitted to \emph{IEEE Transactions on Signal Processing.}
+\end{rSection}
+
+\vspace{-0.15cm}
+\begin{rSection}{Skills}
+  \begin{list}{$\bullet$}{\leftmargin=1.0em}
+  	\item Fluent: Matlab, Python, R, Latex 
+  	\item Basic: Java, SAS 
+  	\item In Training: SQL, Hadoop, Mapreduce 
+  	\end{list}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Undergraduatte AWARDS&HONORS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Awards}
+\begin{tabular}{ @{} >{}l @{\hspace{23ex}} l }
+Chinese Government Award for Outstanding Self Finance Students Abroad  & 2018 \\
+Scholarship of Excellent Academic Performance of Beihang University & 2011-2014  \\
+National Endeavor Fellowship of China (10\%) & 2012-2013\\
+Academic Excellence Student of Beihang University (5\%) & 2012-2013
+\end{tabular}\\
+\end{rSection}
+
+\end{document}
