@@ -22,114 +22,121 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.65in,top=0.3in,right=0.65in,bottom=0.3in]{geometry} % Document margins
+\usepackage[left=0.35in,top=0.35in,right=0.35in,bottom=0.3in]{geometry} % Document margins
 \usepackage{enumitem}
 \usepackage{geometry}
  \usepackage{indentfirst} 
-\geometry{a4paper,left=1.5cm,right=1.5cm,top=2cm,bottom=1.5cm}
+\geometry{a4paper,left=1.0cm,right=1.0cm,top=1.0cm,bottom=0.8cm}
 \name{CHUNLEI ZHANG} 
 \address{(+1)864-986-5975 \quad \\ \quad chunlez@g.clemson.edu }
-<<<<<<< HEAD
-\address{2400 4th AVE Apt 554, Seattle, WA, 98121} % Your phone number and email
-=======
-\address{2400 4th Ave, Seattle, WA, 98121} % Your phone number and email
->>>>>>> aeee92e61e47f5d9c43916a3d648ae634b7e7bfb
+\vspace{-0.5cm}
+\address{128 University Village Dr, Central, SC, 29630} % Your phone number and email
 
 \begin{document}
+
+\vspace{-0.35cm}
+\begin{rSection}{Summary}
+	\begin{tabular}{ @{} >{}l @{\hspace{5ex}} l }
+		Objective:   & Seeking a full-time position as an applied/data/research scientist \\
+		Fluent skills: & Python (NumPy, pandas, Matplotlib, scikit-learn), Spark, Matlab, R, Git, Latex, SQL \\
+		Familiar skills:& Python (Keras, Tensorflow), Java 
+	\end{tabular}\\
+\end{rSection}
+	
 %--------------------------------------------------------
 %	EDUCATION SECTION
 %--------------------------------------------------------
+\vspace{-0.35cm}
 \begin{rSection}{Education}
-{\bf Clemson University, South Carolina, USA} \hfill { Aug 2015 - Aug 2019} \\ 
-{\textbf{Ph.D.} Candidate in Electrical Engineering and Minor in Mathematics} \hfill { GPA: \bf 4.0/4.0}
+{\bf Clemson University, South Carolina, USA} \hfill { Aug 2015 - Dec 2019} \\ 
+{Ph.D. in Electrical Engineering and Minor in Mathematics} \hfill { GPA: \bf 4.0/4.0}
 
-
-Relevant Courses: Data Analysis, Regression and Least Squares Analysis, Statistic Method, Machine Learning, Convolutional Neural Networks for Visual Recognition,
-Linear Programming, Nonlinear Programming, Discrete Optimization, Stochastic Process
-
-
+\vspace{-0.2cm}
 {\bf Beihang University, Beijing, China} \hfill { Sep 2011 - Jul 2015} \\ 
 { Bachelor of Engineering  in Electronic and Information Engineering} \hfill { GPA: \bf 3.9/4.0; Top: 5\%}
 
 \end{rSection}
-
+%--------------------------------------------------------
+%	Work Experience
+%--------------------------------------------------------
+\vspace{-0.2cm}
+\begin{rSection}{Work Experience}	
+Amazon, Inc. 	\hfill {Applied Scientist Intern}\\
+	\begin{rSubsection}{Explore Goods Availability into Search Relevance and Ranking Model}
+		{May 2019 - Aug 2019 }{}{}		
+		\setlength{\parindent}{2em}
+		\item Analyzed and visualized differences of customer purchase behavior and data distribution regarding availability across holiday/non-holiday and different categories
+		\item Proposed two approaches to reduce unavailability rate (UR) in TopK search results which will go into production. One approach reduced around 4\% UR on average and another reduced 10\% UR during offline experiments
+		\item Created a temporal feature into ranking model, resulting in a 8\% UR reduction during holiday
+			\end{rSubsection}	
+\end{rSection}
 %--------------------------------------------------------
 %	Engineering Project
 %--------------------------------------------------------
-
-\begin{rSection}{Data Science Projects}	
-	\begin{rSubsection}{Identifying Authors of Emails (Text Classification)}
-			{Feb 2019 - Mar 2019}{Course Project in Python}{Clemson University}		
-			\setlength{\parindent}{2em} \item Preprocessed text data including stemming words with NLTK, text vectorization with TfidfVectorizer, splitting training/testing sets with sklearn 
-			\item Fitted models using Naive Bayes, Logistic Regression, Support Vector Machine (SVM), Decision Tree, Random Forest, and AdaBoost on training set
-			\item Chosen hyperparameters on validation sets and evaluated obtained models on testing set via confusion matrix including accuracy, precision, recall, etc
-	\end{rSubsection}	
-	
+\vspace{-0.2cm}
+\begin{rSection}{Data Science Projects}		
+	Clemson University \\
 	\begin{rSubsection}{Regression Analysis of Blood Enzyme Levels and a Health Indicator}
-		{Sept 2018 - Nov 2018}{Course Project in R}{Clemson University}		
+		{Sept 2018 - Nov 2018}{}{}		
 		\setlength{\parindent}{2em} \item Applied Variance Inflation Factor (VIF) to check the potential multicollinearity within 100 kinds of blood enzyme		
 		\item Fitted models based on correlation, Stepwise Regression, Ridge Regression and LASSO with proper penalty parameters
-		\item Conducted hypothesis test to determine the model suitability based on p-value and obtained the PRESS value of each model
-		\item Selected the most appropriate model based on Akaike Information Criterion (AIC) and cross validation results and wrote a report		
+		\item Conducted hypothesis test to determine the model suitability based on p-value
+		\item Selected the most appropriate model based on Akaike Information Criterion (AIC) and cross validation results		
 	\end{rSubsection}	
-	
+	\vspace{-0.15cm}
 		\begin{rSubsection}{Regression Analysis of Local Meteorology and Air Pollution}
-			{Aug 2018 - Oct 2018}{Course Project in R}{Clemson University}		
+			{Aug 2018 - Oct 2018}{}{}		
 			\setlength{\parindent}{2em} \item Fitted linear models using forward stepwise, backward stepwise, bidirectional stepwise, and Lasso regression
 			\item Visualized the standardized residual plot, QQ-plot, and ACF plot of each model to check the linear regression assumptions
-			\item Conducted Box-Cox Transformation to transform non-normal dependent variable into a normal shape
-			\item Determined the most appropriate predictive model by comparing the AIC and PRESS value.				
+			\item Conducted Box-Cox Transformation to transform non-normal dependent variable into a normal shape		
 		\end{rSubsection}	
 \end{rSection}
 
 %-------------------------------------------------------------------------------------
 %	Research Experience
 %-------------------------------------------------------------------------------------
-
-\begin{rSection}{Research Experience}	
+\vspace{-0.2cm}
+\begin{rSection}{Research Experience}
+ Clemson University	\hfill {Research Assistant}\\	
 \begin{rSubsection}{Research on Decentralized Optimization Algorithms }
-{Jan 2017 - Present }{Research Assistant; Advisor: Dr. Yongqiang Wang}{Clemson University}
+{Jan 2017 - Present }{}{}
 
  \setlength{\parindent}{2em}
- \item Designed two novel algorithms which enabled data privacy-preservation in decentralized optimization based on Alternating Direction Method of Multipliers (ADMM) and Subgradient Method
-\item Analyzed the convergence rate of the ADMM-based algorithm, which is $O(1/k)$
+ \item Designed two novel algorithms which enabled data privacy-preservation in decentralized optimization based on Alternating Direction Method of Multipliers (ADMM) and Subgradient Method 
 \item Implemented the ADMM-based algorithm on twelve Raspberry Pi boards in C++
-\item Evaluated the proposed algorithms on average consensus problem, linear regression problem, etc in C++
 \end{rSubsection}	
 		
-
-\begin{rSubsection}{Research on Application of Decentralized Optimization}{ Sep 2015 - Dec 2016  }{Research Assistant; Advisor: Dr. Yongqiang Wang}{Clemson University}
-       \item Proposed two distributed localization algorithms based on ADMM and proved the convergence rates of the proposed algorithms are $O(1/k)$
+\vspace{-0.15cm}
+\begin{rSubsection}{Research on Application of Decentralized Optimization}{ Sep 2015 - Dec 2016  }{}{}
+       \item Proposed two distributed localization algorithms based on ADMM and proved the convergence rates are $O(1/k)$
 		\item Compared the proposed algorithms with some existing localization algorithms via Matlab simulations, which suggested a 15\% performance improvement in localization accuracy 
 \end{rSubsection}
-\end{rSection}
-
-
-\vspace{-0.15cm}
-\begin{rSection}{Skills}
-  \begin{list}{$\bullet$}{\leftmargin=1.0em}
-  	\item Fluent: Python (NumPy, pandas, Matplotlib, scikit-learn), Matlab, R, Git, Latex 
-  	\item In Training: Java, Hadoop, MapReduce, Python (Keras, Tensorflow), SQL
-  	\end{list}
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
 % PUBLICATION SECTION
 %----------------------------------------------------------------------------------------
+\vspace{-0.2cm}
 \begin{rSection}{Publications}	
 	[7] \textbf{C. L. Zhang}, Y. Q. Wang, Privacy-preserving Decentralized Optimization based on ADMM. \emph{IEEE Transactions on Information Forensics and Security 14.3 (2019): 565-580.}
-	
+
+	\vspace{-0.2cm}	
 	[6]	\textbf{C. L. Zhang}, Y. Q. Wang, Distributed event localization via alternating direction method of multipliers. \emph{IEEE Transactions on Mobile Computing 17.2 (2018): 348-361.}
 	
+	\vspace{-0.2cm}	
 	[5] \textbf{C. L. Zhang}, Y. Q. Wang, Enabling Privacy-preservation in Decentralized Optimization.  Accepted to \emph{IEEE Transactions on Control of Network Systems}
-		
+	
+	\vspace{-0.2cm}		
 	[4] \textbf{C. L. Zhang}, Y. Q. Wang, Sensor Network Event Localization via Non-convex Non-smooth ADMM and Augmented Lagrangian Methods. Accepted to  \emph{IEEE Transactions on Control of Network Systems.}
-	
+
+	\vspace{-0.2cm}		
 	[3] H. Gao, \textbf{C. L. Zhang}, M. Ahmad, Y. Q. Wang. Privacy-Preserving Average Consensus on Directed Graphs Using Push-Sum.  \emph{IEEE Conference on Communications and Network Security, 2018.}
-	
+
+	\vspace{-0.2cm}		
 	[2] T. Shang, \textbf{C. L. Zhang}, K. Li, J. W. Liu, Nonlinear quantum network coding with classical
 	communication resource.  \emph{IEEE Globecom Workshops, 2015.}
-	
+
+	\vspace{-0.2cm}		
 	[1] \textbf{C. L. Zhang}, H. Gao,  Y. Q. Wang. Enabling Privacy-preservation in ADMM based Decentralized Optimization using Function Decomposition. Submitted to \emph{IEEE Transactions on Signal Processing.}
 \end{rSection}
 
@@ -137,8 +144,9 @@ Linear Programming, Nonlinear Programming, Discrete Optimization, Stochastic Pro
 %----------------------------------------------------------------------------------------
 %	Undergraduatte AWARDS&HONORS SECTION
 %----------------------------------------------------------------------------------------
+\vspace{-0.2cm}
 \begin{rSection}{Awards}
-\begin{tabular}{ @{} >{}l @{\hspace{23ex}} l }
+\begin{tabular}{ @{} >{}l @{\hspace{38ex}} l }
 Chinese Government Award for Outstanding Self Finance Students Abroad  & 2018 \\
 Harris Award for the Outstanding Graduate Researcher &2018 \\
 Scholarship of Excellent Academic Performance of Beihang University & 2011-2014  \\
